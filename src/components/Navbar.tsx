@@ -56,6 +56,9 @@ export function Navbar() {
                <DropdownMenuItem asChild>
                 <Link href="/tools/business-consultancy-ai-functions">Business Consultancy</Link>
               </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/tools/cleaning-property-maintenance-ai-functions">Cleaning & Property Services</Link>
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
           <Link href="/brief-analyzer" className="text-muted-foreground transition-colors hover:text-foreground">
@@ -93,6 +96,9 @@ export function Navbar() {
             </Link>
             <Link href="/tools/business-consultancy-ai-functions" className="text-muted-foreground hover:text-foreground" onClick={closeMenu}>
               Business Consultancy
+            </Link>
+            <Link href="/tools/cleaning-property-maintenance-ai-functions" className="text-muted-foreground hover:text-foreground" onClick={closeMenu}>
+              Cleaning & Property Services
             </Link>
             <Link href="/brief-analyzer" className="text-muted-foreground hover:text-foreground" onClick={closeMenu}>
               Brief Analyzer
