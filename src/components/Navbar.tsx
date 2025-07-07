@@ -72,9 +72,19 @@ export function Navbar() {
           <Link href="/brief-analyzer" className="text-muted-foreground transition-colors hover:text-foreground">
             Brief Analyzer
           </Link>
-          <Link href="/admin" className="text-muted-foreground transition-colors hover:text-foreground">
-            Admin
-          </Link>
+          <DropdownMenu>
+            <DropdownMenuTrigger className="flex items-center gap-1 text-muted-foreground transition-colors hover:text-foreground outline-none">
+              Admin <ChevronDown className="h-4 w-4 opacity-70 relative top-px" />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuItem asChild>
+                <Link href="/admin">Admin Dashboard</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/tools/web-consultancy-ai-functions">Web Tools</Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </nav>
         <div className="flex items-center gap-2">
           <Button asChild>
@@ -124,7 +134,10 @@ export function Navbar() {
               Brief Analyzer
             </Link>
             <Link href="/admin" className="text-muted-foreground hover:text-foreground" onClick={closeMenu}>
-              Admin
+              Admin Dashboard
+            </Link>
+            <Link href="/tools/web-consultancy-ai-functions" className="text-muted-foreground hover:text-foreground" onClick={closeMenu}>
+              Web Tools
             </Link>
             <Link href="/#contact" className="text-muted-foreground hover:text-foreground" onClick={closeMenu}>
               Contact
