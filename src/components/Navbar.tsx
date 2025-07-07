@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState } from 'react';
@@ -37,10 +38,10 @@ export function Navbar() {
           ))}
           <DropdownMenu>
             <DropdownMenuTrigger className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none">
-              <div className="flex items-center gap-1">
+              <span className="flex items-center gap-1">
                 Tools
                 <ChevronDown className="h-4 w-4 opacity-70 relative top-px" />
-              </div>
+              </span>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem asChild>
@@ -74,10 +75,10 @@ export function Navbar() {
           </DropdownMenu>
           <DropdownMenu>
             <DropdownMenuTrigger className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none">
-              <div className="flex items-center gap-1">
+              <span className="flex items-center gap-1">
                  Admin
                 <ChevronDown className="h-4 w-4 opacity-70 relative top-px" />
-              </div>
+              </span>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem asChild>
