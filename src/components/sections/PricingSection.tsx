@@ -18,6 +18,7 @@ const pricingTiers = [
       "First Year 'standard' Support Plan included",
     ],
     buttonText: 'Get Started',
+    buttonLink: '/#contact',
   },
   {
     name: 'Pro',
@@ -31,6 +32,7 @@ const pricingTiers = [
       "First Year 'standard' Support Plan included",
     ],
     buttonText: 'Choose Pro',
+    buttonLink: '/#contact',
   },
   {
     name: 'Bespoke',
@@ -46,6 +48,7 @@ const pricingTiers = [
       "First Year 'Bespoke' Support Plan included",
     ],
     buttonText: 'Contact Us',
+    buttonLink: '/#contact',
   },
   {
     name: 'Support/After-care',
@@ -60,6 +63,7 @@ const pricingTiers = [
       'Priority Issue Support',
     ],
     buttonText: 'Find Out More',
+    buttonLink: '/support',
   }
 ];
 
@@ -95,7 +99,7 @@ export function PricingSection() {
             </CardContent>
             <CardFooter className="mt-auto pt-6">
               <Button asChild className="w-full">
-                <Link href="/#contact">{tier.buttonText}</Link>
+                <Link href={tier.buttonLink || '/#contact'}>{tier.buttonText}</Link>
               </Button>
             </CardFooter>
           </Card>
