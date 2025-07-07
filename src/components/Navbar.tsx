@@ -50,6 +50,9 @@ export function Navbar() {
                 <Link href="/tools/accountancy-ai-functions">Accountancy Firm</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
+                <Link href="/tools/business-consultancy-ai-functions">Business Consultancy</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
                 <Link href="/tools/fast-food-ai-functions">Fast Food Business</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
@@ -92,6 +95,9 @@ export function Navbar() {
             </Link>
              <Link href="/tools/accountancy-ai-functions" className="text-muted-foreground hover:text-foreground" onClick={closeMenu}>
               Accountancy Firm
+            </Link>
+            <Link href="/tools/business-consultancy-ai-functions" className="text-muted-foreground hover:text-foreground" onClick={closeMenu}>
+              Business Consultancy
             </Link>
             <Link href="/tools/fast-food-ai-functions" className="text-muted-foreground hover:text-foreground" onClick={closeMenu}>
               Fast Food Business
