@@ -36,11 +36,11 @@ export function Navbar() {
             </Link>
           ))}
           <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <button className="flex items-center gap-1 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none">
+            <DropdownMenuTrigger className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none">
+              <div className="flex items-center gap-1">
                 Tools
                 <ChevronDown className="h-4 w-4 opacity-70 relative top-px" />
-              </button>
+              </div>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem asChild>
@@ -73,11 +73,11 @@ export function Navbar() {
             </DropdownMenuContent>
           </DropdownMenu>
           <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-               <button className="flex items-center gap-1 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none">
+            <DropdownMenuTrigger className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none">
+              <div className="flex items-center gap-1">
                  Admin
                 <ChevronDown className="h-4 w-4 opacity-70 relative top-px" />
-              </button>
+              </div>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem asChild>
