@@ -72,6 +72,9 @@ export function Navbar() {
           <Link href="/brief-analyzer" className="text-muted-foreground transition-colors hover:text-foreground">
             Brief Analyzer
           </Link>
+          <Link href="/admin" className="text-muted-foreground transition-colors hover:text-foreground">
+            Admin
+          </Link>
         </nav>
         <div className="flex items-center gap-2">
           <Button asChild>
@@ -119,6 +122,9 @@ export function Navbar() {
             </Link>
             <Link href="/brief-analyzer" className="text-muted-foreground hover:text-foreground" onClick={closeMenu}>
               Brief Analyzer
+            </Link>
+            <Link href="/admin" className="text-muted-foreground hover:text-foreground" onClick={closeMenu}>
+              Admin
             </Link>
             <Link href="/#contact" className="text-muted-foreground hover:text-foreground" onClick={closeMenu}>
               Contact
