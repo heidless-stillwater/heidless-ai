@@ -58,6 +58,9 @@ export function Navbar() {
               <DropdownMenuItem asChild>
                 <Link href="/tools/life-coach-ai-functions">Life Coach</Link>
               </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/tools/legal-practice-ai-functions">Legal Practice</Link>
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
           <Link href="/brief-analyzer" className="text-muted-foreground transition-colors hover:text-foreground">
@@ -98,6 +101,9 @@ export function Navbar() {
             </Link>
             <Link href="/tools/life-coach-ai-functions" className="text-muted-foreground hover:text-foreground" onClick={closeMenu}>
               Life Coach
+            </Link>
+            <Link href="/tools/legal-practice-ai-functions" className="text-muted-foreground hover:text-foreground" onClick={closeMenu}>
+              Legal Practice
             </Link>
             <Link href="/brief-analyzer" className="text-muted-foreground hover:text-foreground" onClick={closeMenu}>
               Brief Analyzer
