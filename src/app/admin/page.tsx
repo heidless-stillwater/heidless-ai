@@ -1,10 +1,4 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { BriefAnalyzerForm } from "@/app/brief-analyzer/BriefAnalyzerForm";
 
 export default function AdminPage() {
   return (
@@ -14,21 +8,11 @@ export default function AdminPage() {
           Admin Dashboard
         </h1>
         <p className="text-muted-foreground md:text-xl">
-          Welcome to the admin area.
+          Use the Brief Analyzer tool below to get AI-powered summaries of client briefs.
         </p>
       </div>
       <div className="max-w-3xl mx-auto mt-10">
-        <Card>
-          <CardHeader>
-            <CardTitle>Placeholder</CardTitle>
-            <CardDescription>
-              Admin functionality will be displayed here.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <p>This is a placeholder for the admin dashboard content.</p>
-          </CardContent>
-        </Card>
+        <BriefAnalyzerForm />
       </div>
     </div>
   );
