@@ -10,6 +10,7 @@ const navLinks = [
   { href: '/#portfolio', label: 'Portfolio' },
   { href: '/pricing', label: 'Pricing' },
   { href: '/support', label: 'Support' },
+  { href: '/tools', label: 'Tools' },
 ];
 
 export function Navbar() {
