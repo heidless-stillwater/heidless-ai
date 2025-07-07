@@ -36,10 +36,11 @@ export function Navbar() {
             </Link>
           ))}
           <DropdownMenu>
-            <DropdownMenuTrigger className="flex items-center gap-1 text-muted-foreground transition-colors hover:text-foreground outline-none">
-              <span>
-                Tools <ChevronDown className="h-4 w-4 opacity-70 relative top-px" />
-              </span>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" className="gap-1 px-2 text-muted-foreground hover:bg-transparent hover:text-foreground focus-visible:ring-0 focus-visible:ring-offset-0">
+                Tools
+                <ChevronDown className="h-4 w-4 opacity-70 relative top-px" />
+              </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem asChild>
@@ -72,10 +73,11 @@ export function Navbar() {
             </DropdownMenuContent>
           </DropdownMenu>
           <DropdownMenu>
-            <DropdownMenuTrigger className="flex items-center gap-1 text-muted-foreground transition-colors hover:text-foreground outline-none">
-              <span>
-                Admin <ChevronDown className="h-4 w-4 opacity-70 relative top-px" />
-              </span>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" className="gap-1 px-2 text-muted-foreground hover:bg-transparent hover:text-foreground focus-visible:ring-0 focus-visible:ring-offset-0">
+                 Admin
+                <ChevronDown className="h-4 w-4 opacity-70 relative top-px" />
+              </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem asChild>
