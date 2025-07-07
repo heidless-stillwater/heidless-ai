@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { CodeXml, Palette, Figma } from 'lucide-react';
+import { CodeXml, Palette, Figma, Bot, ShoppingCart, AppWindow, LineChart, Gauge, Blocks } from 'lucide-react';
 
 const services = [
   {
@@ -16,6 +16,36 @@ const services = [
     icon: <Figma className="h-10 w-10 text-primary" />,
     title: 'UI/UX Strategy',
     description: 'Designing intuitive and engaging user interfaces based on in-depth research and a human-centered approach.'
+  },
+  {
+    icon: <Bot className="h-10 w-10 text-primary" />,
+    title: 'AI Integration',
+    description: 'Leveraging artificial intelligence to build smart chatbots, automate tasks, and create personalized user experiences.'
+  },
+  {
+    icon: <ShoppingCart className="h-10 w-10 text-primary" />,
+    title: 'E-commerce Solutions',
+    description: 'Developing robust and scalable online stores that drive sales and provide a seamless shopping experience for your customers.'
+  },
+  {
+    icon: <AppWindow className="h-10 w-10 text-primary" />,
+    title: 'Web App Development',
+    description: 'Building custom, high-performance web applications tailored to your specific business needs and objectives.'
+  },
+  {
+    icon: <LineChart className="h-10 w-10 text-primary" />,
+    title: 'SEO & Marketing',
+    description: 'Improving your online visibility and driving organic traffic with proven search engine optimization and digital marketing strategies.'
+  },
+  {
+    icon: <Gauge className="h-10 w-10 text-primary" />,
+    title: 'Performance Optimization',
+    description: 'Enhancing your website’s speed and reliability to improve user experience, engagement, and conversion rates.'
+  },
+  {
+    icon: <Blocks className="h-10 w-10 text-primary" />,
+    title: 'CMS Development',
+    description: 'Implementing flexible and powerful Content Management Systems that allow you to manage your website content with ease.'
   },
 ];
 
