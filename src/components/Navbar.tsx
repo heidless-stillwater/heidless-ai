@@ -69,9 +69,6 @@ export function Navbar() {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-          <Link href="/brief-analyzer" className="text-muted-foreground transition-colors hover:text-foreground">
-            Brief Analyzer
-          </Link>
           <DropdownMenu>
             <DropdownMenuTrigger className="flex items-center gap-1 text-muted-foreground transition-colors hover:text-foreground outline-none">
               Admin <ChevronDown className="h-4 w-4 opacity-70 relative top-px" />
@@ -129,9 +126,6 @@ export function Navbar() {
             </Link>
             <Link href="/tools/legal-practice-ai-functions" className="text-muted-foreground hover:text-foreground" onClick={closeMenu}>
               Legal Practice
-            </Link>
-            <Link href="/brief-analyzer" className="text-muted-foreground hover:text-foreground" onClick={closeMenu}>
-              Brief Analyzer
             </Link>
             <Link href="/admin" className="text-muted-foreground hover:text-foreground" onClick={closeMenu}>
               Admin Dashboard

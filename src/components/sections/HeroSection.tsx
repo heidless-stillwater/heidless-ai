@@ -16,7 +16,7 @@ export function HeroSection() {
             <Link href="/#portfolio">View Our Work</Link>
           </Button>
           <Button asChild size="lg" variant="secondary">
-            <Link href="/brief-analyzer">Analyze a Brief</Link>
+            <Link href="/#contact">Get In Touch</Link>
           </Button>
         </div>
       </div>
