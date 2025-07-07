@@ -59,6 +59,9 @@ export function Navbar() {
               <DropdownMenuItem asChild>
                 <Link href="/tools/cleaning-property-maintenance-ai-functions">Cleaning & Property Services</Link>
               </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/tools/fitness-coach-ai-functions">Fitness Coach AI</Link>
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
           <Link href="/brief-analyzer" className="text-muted-foreground transition-colors hover:text-foreground">
@@ -99,6 +102,9 @@ export function Navbar() {
             </Link>
             <Link href="/tools/cleaning-property-maintenance-ai-functions" className="text-muted-foreground hover:text-foreground" onClick={closeMenu}>
               Cleaning & Property Services
+            </Link>
+            <Link href="/tools/fitness-coach-ai-functions" className="text-muted-foreground hover:text-foreground" onClick={closeMenu}>
+              Fitness Coach AI
             </Link>
             <Link href="/brief-analyzer" className="text-muted-foreground hover:text-foreground" onClick={closeMenu}>
               Brief Analyzer
