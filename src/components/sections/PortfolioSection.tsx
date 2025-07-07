@@ -32,7 +32,7 @@ export function PortfolioSection() {
   return (
     <section id="portfolio" className="space-y-8">
       <div className="text-center space-y-2">
-        <h2 className="text-3xl font-bold font-headline sm:text-4xl">Our Recent <span className="text-accent">Work</span></h2>
+        <h2 className="text-3xl font-bold font-headline sm:text-4xl">Our Recent Work</h2>
         <p className="text-muted-foreground md:text-lg">A glimpse into the successful projects we've delivered.</p>
       </div>
       <div className="grid gap-6 md:grid-cols-2">

@@ -23,7 +23,7 @@ export function ServicesSection() {
   return (
     <section id="services" className="space-y-8">
       <div className="text-center space-y-2">
-        <h2 className="text-3xl font-bold font-headline sm:text-4xl">Our <span className="text-accent">Expertise</span></h2>
+        <h2 className="text-3xl font-bold font-headline sm:text-4xl">Our Expertise</h2>
         <p className="text-muted-foreground md:text-lg">We offer a range of services to bring your digital vision to life.</p>
       </div>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
