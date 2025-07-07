@@ -37,7 +37,9 @@ export function Navbar() {
           ))}
           <DropdownMenu>
             <DropdownMenuTrigger className="flex items-center gap-1 text-muted-foreground transition-colors hover:text-foreground outline-none">
-              Tools <ChevronDown className="h-4 w-4 opacity-70 relative top-px" />
+              <span>
+                Tools <ChevronDown className="h-4 w-4 opacity-70 relative top-px" />
+              </span>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem asChild>
@@ -71,7 +73,9 @@ export function Navbar() {
           </DropdownMenu>
           <DropdownMenu>
             <DropdownMenuTrigger className="flex items-center gap-1 text-muted-foreground transition-colors hover:text-foreground outline-none">
-              Admin <ChevronDown className="h-4 w-4 opacity-70 relative top-px" />
+              <span>
+                Admin <ChevronDown className="h-4 w-4 opacity-70 relative top-px" />
+              </span>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem asChild>
