@@ -37,11 +37,11 @@ export function Navbar() {
             </Link>
           ))}
           <DropdownMenu>
-            <DropdownMenuTrigger className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none">
-              <span className="flex items-center gap-1">
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" className="gap-1 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground hover:bg-transparent p-0 h-auto focus-visible:ring-0 focus-visible:ring-offset-0">
                 Tools
-                <ChevronDown className="h-4 w-4 opacity-70 relative top-px" />
-              </span>
+                <ChevronDown className="h-4 w-4 opacity-70" />
+              </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem asChild>
@@ -74,11 +74,11 @@ export function Navbar() {
             </DropdownMenuContent>
           </DropdownMenu>
           <DropdownMenu>
-            <DropdownMenuTrigger className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none">
-              <span className="flex items-center gap-1">
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" className="gap-1 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground hover:bg-transparent p-0 h-auto focus-visible:ring-0 focus-visible:ring-offset-0">
                  Admin
-                <ChevronDown className="h-4 w-4 opacity-70 relative top-px" />
-              </span>
+                <ChevronDown className="h-4 w-4 opacity-70" />
+              </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem asChild>
