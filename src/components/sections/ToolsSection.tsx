@@ -84,7 +84,7 @@ const professions = [
 export function ToolsSection() {
   return (
     <div className="space-y-12">
-      <div className="flex flex-wrap items-center justify-center gap-2" style={{ maxWidth: 'calc(100% - 100px)', margin: '0 auto' }}>
+      <div className="flex flex-wrap items-center justify-center gap-2">
         {professions.map((prof) => (
           <Button key={prof.id} asChild variant="outline" className="px-3 py-1 h-auto">
             <a href={`#${prof.id}`}>{prof.name}</a>
