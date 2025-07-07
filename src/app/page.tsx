@@ -3,6 +3,7 @@ import { ServicesSection } from '@/components/sections/ServicesSection';
 import { PortfolioSection } from '@/components/sections/PortfolioSection';
 import { CTASection } from '@/components/sections/CTASection';
 import { ContactSection } from '@/components/sections/ContactSection';
+import { PricingSection } from '@/components/sections/PricingSection';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <ServicesSection />
         <PortfolioSection />
         <CTASection />
+        <PricingSection />
         <ContactSection />
       </div>
     </div>
