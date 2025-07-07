@@ -44,7 +44,7 @@ export function Navbar() {
                 <Link href="/tools">Tools Overview</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link href="/tools/dental-ai-functions">Dental Practice AI</Link>
+                <Link href="/tools/dental-ai-functions">Dental Practice</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
                 <Link href="/tools/accountancy-ai-functions">Accountancy Firm AI</Link>
@@ -76,7 +76,7 @@ export function Navbar() {
               Tools Overview
             </Link>
             <Link href="/tools/dental-ai-functions" className="text-muted-foreground hover:text-foreground" onClick={closeMenu}>
-              Dental Practice AI
+              Dental Practice
             </Link>
              <Link href="/tools/accountancy-ai-functions" className="text-muted-foreground hover:text-foreground" onClick={closeMenu}>
               Accountancy Firm AI
