@@ -19,7 +19,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur-sm">
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2" onClick={closeMenu}>
-          <span className="font-bold font-headline text-xl">heidless ai</span>
+          <span className="font-bold font-headline text-xl">heidless <span className="text-accent">ai</span></span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm md:flex">
           {navLinks.map(({ href, label }) => (

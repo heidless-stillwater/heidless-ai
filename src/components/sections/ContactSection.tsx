@@ -28,7 +28,7 @@ export function ContactSection() {
   return (
     <section id="contact" className="space-y-8">
       <div className="text-center space-y-2">
-        <h2 className="text-3xl font-bold font-headline sm:text-4xl">Get In Touch</h2>
+        <h2 className="text-3xl font-bold font-headline sm:text-4xl">Get In <span className="text-accent">Touch</span></h2>
         <p className="text-muted-foreground md:text-lg">Have a question or a project in mind? We'd love to hear from you.</p>
       </div>
       <div className="max-w-2xl mx-auto">
