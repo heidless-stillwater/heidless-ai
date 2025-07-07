@@ -6,18 +6,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const professions = [
   {
-    id: 'web-consultancy',
-    name: 'Web Consultancy',
-    functions: [
-      'Client Communication Bots',
-      'Automated Code Generation',
-      'Bug Detection & Fixing',
-      'Code Review Assistance',
-    ],
-    defaultTab: 'Client Communication Bots',
-    tabMenuMaxWidth: '100%'
-  },
-  {
     id: 'accountancy',
     name: 'Accountancy',
     functions: [
@@ -28,7 +16,6 @@ const professions = [
       'Expense Categorization',
     ],
     defaultTab: 'Expense Categorization',
-    tabMenuMaxWidth: '100%'
   },
   {
     id: 'fast-food-shop',
@@ -41,7 +28,6 @@ const professions = [
       'Personalized Recommendations',
     ],
     defaultTab: '24/7 Customer Chatbot',
-    tabMenuMaxWidth: 'calc(100% - 10px)'
   },
   {
     id: 'dental-practice',
@@ -53,7 +39,6 @@ const professions = [
       'Predictive Maintenance for Equipment',
     ],
     defaultTab: 'Diagnostic Assistance',
-    tabMenuMaxWidth: 'calc(100% - 100px)'
   },
   {
     id: 'fitness-coach',
@@ -65,7 +50,6 @@ const professions = [
       'Form Correction',
     ],
     defaultTab: 'Client Engagement Bots',
-    tabMenuMaxWidth: 'calc(100% - 100px)'
   },
   {
     id: 'life-coach',
@@ -77,7 +61,6 @@ const professions = [
       'Emotional Intelligence Development',
     ],
     defaultTab: 'Personalized Goal Setting',
-    tabMenuMaxWidth: 'calc(100% - 100px)'
   }
 ];
 
@@ -101,7 +84,7 @@ export function ToolsSection() {
               </CardHeader>
               <CardContent>
                 <Tabs defaultValue={prof.defaultTab} className="w-full">
-                  <TabsList className="h-auto flex-wrap justify-start mb-[10px]" style={{ maxWidth: prof.tabMenuMaxWidth }}>
+                  <TabsList className="h-auto flex-wrap justify-start">
                     {prof.functions.map((func) => (
                       <TabsTrigger key={func} value={func} className="text-left">{func}</TabsTrigger>
                     ))}
