@@ -1,16 +1,22 @@
+
 "use client";
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from './ui/button';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 const navLinks = [
   { href: '/#services', label: 'Services' },
   { href: '/#portfolio', label: 'Portfolio' },
   { href: '/pricing', label: 'Pricing' },
   { href: '/support', label: 'Support' },
-  { href: '/tools', label: 'Tools' },
 ];
 
 export function Navbar() {
@@ -30,6 +36,19 @@ export function Navbar() {
               {label}
             </Link>
           ))}
+          <DropdownMenu>
+            <DropdownMenuTrigger className="flex items-center gap-1 text-muted-foreground transition-colors hover:text-foreground outline-none">
+              Tools <ChevronDown className="h-4 w-4 opacity-70 relative top-px" />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuItem asChild>
+                <Link href="/tools">Tools Overview</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/tools/dental-ai-functions">Dental Practice AI</Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
           <Link href="/brief-analyzer" className="text-muted-foreground transition-colors hover:text-foreground">
             Brief Analyzer
           </Link>
@@ -51,6 +70,12 @@ export function Navbar() {
                 {label}
               </Link>
             ))}
+            <Link href="/tools" className="text-muted-foreground hover:text-foreground" onClick={closeMenu}>
+              Tools Overview
+            </Link>
+            <Link href="/tools/dental-ai-functions" className="text-muted-foreground hover:text-foreground" onClick={closeMenu}>
+              Dental Practice AI
+            </Link>
             <Link href="/brief-analyzer" className="text-muted-foreground hover:text-foreground" onClick={closeMenu}>
               Brief Analyzer
             </Link>
